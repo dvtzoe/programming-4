@@ -1,11 +1,11 @@
 class Dog:
     def __init__(
         self,
-        name,
-        age,
+        name: str,
+        age: int,
     ):
-        self.name = name
-        self.age = age
+        self.name: str = name
+        self.age: int = age
 
     def paw(self):
         return f"{self.name} is put on your hand."
