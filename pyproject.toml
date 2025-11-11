@@ -1,0 +1,16 @@
+[project]
+name = "programming-4"
+version = "0.1.0"
+description = "For Kosen's Programming 4 assignments"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.uv.workspace]
+members = ["week*"]
+
+[dependency-groups]
+dev = [
+    "basedpyright>=1.33.0",
+    "ruff>=0.14.4",
+]
