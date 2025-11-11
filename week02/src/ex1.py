@@ -1,6 +1,16 @@
-def main():
-    print("Hello from week02!")
+class Dog:
+    def __init__(
+        self,
+        name,
+        age,
+    ):
+        self.name = name
+        self.age = age
+
+    def paw(self):
+        return f"{self.name} is put on your hand."
 
 
-if __name__ == "__main__":
-    main()
+my_dog = Dog("N3kKffYB+UOoTYAVOYp9O6ZoHr28Rykd5b1hfvxKsrU=", 3)
+his_dog = Dog("5LeC4cgiRTWPNFLh0K3a5WiTEBMFXTerXwSAFMCs2us=", 5)
+our_dog = Dog("2C8Y40ZFVrAsNqjJv8UyQvUencEWOzKvleT7A4345Y4=", 4)
