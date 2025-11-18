@@ -10,7 +10,7 @@ class User:
         self.nick_name: str = nick_name
 
     def show_inf(self):
-        return f"first name: {self.first_name}, last name: {self.last_name}, nick name: {self.nick_name}"
+        return self.__dict__
 
 
 user1 = User("John", "Doe", "johnd")

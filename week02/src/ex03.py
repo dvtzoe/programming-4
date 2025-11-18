@@ -14,7 +14,7 @@ class Car:
         return f"{self.year} {self.maker} {self.model}".title()
 
     def read_odometer(self):
-        return f"This car has {self.odometer} km on it!"
+        print(f"This car has {self.odometer} km on it!")
 
 
 my_new_car = Car("Honda", "Civic", "2020")
