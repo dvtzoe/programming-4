@@ -21,3 +21,5 @@ mkdir -p "$results_dir"
 uv run "$src_file" > "$output_file" 2>&1
 
 cat "$output_file"
+
+cat "$output_file" | wl-copy
