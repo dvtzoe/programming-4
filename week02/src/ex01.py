@@ -1,4 +1,4 @@
-def print_all_properties_and_methods(obj):
+def print_all_properties_and_methods(obj: object) -> None:
     print(*[pm for pm in dir(obj) if not pm.startswith("__")], sep=" ")
 
 
