@@ -7,7 +7,12 @@ requires-python = ">=3.12"
 dependencies = []
 
 [tool.uv.workspace]
-members = ["week*"]
+members = [
+    "week01",
+    "week02",
+    "week03",
+    "week04"
+]
 
 [dependency-groups]
 dev = [
@@ -16,4 +21,17 @@ dev = [
 
 [tool.ruff.lint]
 select = ["ALL"]
-
+ignore = [
+    "COM812",
+    "D100",
+    "D101",
+    "D102",
+    "D103",
+    "D105",
+    "D107",
+    "D203",
+    "D212",
+    "ERA001",
+    "INP001",
+    "T201",
+]

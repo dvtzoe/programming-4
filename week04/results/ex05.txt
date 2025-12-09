@@ -1,0 +1,4 @@
+Brand: Maruti
+Model: Alto
+Year: 2022
+speed up ...

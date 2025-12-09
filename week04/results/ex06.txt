@@ -1,0 +1,12 @@
+Square
+Squares have each angle equal to 90 degrees.
+16
+Circle
+I am a two-dimensional shape.
+153.93804002589985
+Equilateral Triangle
+An equilateral triangle has  equal sides on each side.
+15.588457268119894
+Any Triangle
+The sum of the internal angles of a triangle is always 180 degrees.
+12.0
