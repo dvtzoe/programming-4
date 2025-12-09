@@ -4,12 +4,12 @@ class User:
         first_name: str,
         last_name: str,
         nick_name: str,
-    ):
+    ) -> None:
         self.first_name: str = first_name
         self.last_name: str = last_name
         self.nick_name: str = nick_name
 
-    def show_inf(self):
+    def show_inf(self) -> dict:
         return self.__dict__
 
 

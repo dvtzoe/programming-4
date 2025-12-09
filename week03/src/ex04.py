@@ -7,13 +7,13 @@ class Pet(ABC):
         age: int,
         weight: float,
         gender: str,
-    ):
+    ) -> None:
         self.age: int = age
         self.weight: float = weight
         self.gender: str = gender
 
     @abstractmethod
-    def show_info(self):
+    def show_info(self) -> None:
         pass
 
 
@@ -24,13 +24,15 @@ class Dog(Pet):
         weight: float,
         gender: str,
         fang_size: float,
-    ):
+    ) -> None:
         super().__init__(age, weight, gender)
         self.fang_size: float = fang_size
 
-    def show_info(self):
+    def show_info(self) -> None:
         print(
-            f"Dog - Age: {self.age}, Weight: {self.weight}, Gender: {self.gender}, Fang Size: {self.fang_size}"
+            f"""Dog - Age: {self.age},
+            Weight: {self.weight},Gender: {self.gender},
+            Fang Size: {self.fang_size}"""
         )
 
 
@@ -41,13 +43,16 @@ class Cat(Pet):
         weight: float,
         gender: str,
         fang_size: float,
-    ):
+    ) -> None:
         super().__init__(age, weight, gender)
         self.fang_size: float = fang_size
 
-    def show_info(self):
+    def show_info(self) -> None:
         print(
-            f"Cat - Age: {self.age}, Weight: {self.weight}, Gender: {self.gender}, Fang Size: {self.fang_size}"
+            f"""Cat - Age: {self.age},
+            Weight: {self.weight},
+            Gender: {self.gender},
+            Fang Size: {self.fang_size}"""
         )
 
 
@@ -58,11 +63,14 @@ class Bird(Pet):
         weight: float,
         gender: str,
         wing_size: float,
-    ):
+    ) -> None:
         super().__init__(age, weight, gender)
         self.wing_size: float = wing_size
 
-    def show_info(self):
+    def show_info(self) -> None:
         print(
-            f"Bird - Age: {self.age}, Weight: {self.weight}, Gender: {self.gender}, Wing Size: {self.wing_size}"
+            f"""Bird - Age: {self.age},
+            Weight: {self.weight},
+            Gender: {self.gender},
+            Wing Size: {self.wing_size}"""
         )

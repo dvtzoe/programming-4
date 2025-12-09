@@ -4,16 +4,16 @@ class Car:
         maker: str,
         model: str,
         year: str,
-    ):
+    ) -> None:
         self.maker: str = maker
         self.model: str = model
         self.year: str = year
         self.odometer: int = 0
 
-    def get_d_name(self):
+    def get_d_name(self) -> str:
         return f"{self.year} {self.maker} {self.model}".title()
 
-    def read_odometer(self):
+    def read_odometer(self) -> None:
         print(f"This car has {self.odometer} km on it!")
 
 

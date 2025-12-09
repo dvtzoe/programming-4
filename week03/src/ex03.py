@@ -1,32 +1,32 @@
 from abc import ABC, abstractmethod
 
 
-class bee(ABC):
+class Bee(ABC):
     @abstractmethod
-    def fly(self):
+    def fly(self) -> None:
         pass
 
-    def attack(self):
+    def attack(self) -> None:
         print("Attack against an intruder")
 
 
-class honey_bee(bee):
-    def fly(self):
+class HoneyBee(Bee):
+    def fly(self) -> None:
         print("Looking for feed")
 
 
-class hornet_bee(bee):
-    def fly(self):
+class HornetBee(Bee):
+    def fly(self) -> None:
         print("Looking for enemy")
 
 
 # # (1)
-# bee = bee()
+# bee = Bee()
 # # (2)
-# hb: bee = honey_bee()
+# hb: bee = HoneyBee()
 # hb.fly()
 # hb.attack()
 # # (3)
-# hb: bee = hornet_bee()
+# hb: bee = HornetBee()
 # hb.fly()
 # hb.attack()

@@ -11,9 +11,6 @@ class EnginePowered:
         *,
         horsepower: int | None = None,
         fuel_type: str | None = None,
-        number_of_wheels: int | None = None,
-        brand: str | None = None,
-        color: str | None = None,
     ) -> None:
         self.horsepower = horsepower
         self.fuel_type = fuel_type
@@ -32,8 +29,6 @@ class WheeledVehicle:
     def __init__(
         self,
         *,
-        horsepower: int | None = None,
-        fuel_type: str | None = None,
         number_of_wheels: int | None = None,
         brand: str | None = None,
         color: str | None = None,
@@ -55,9 +50,6 @@ class Car(EnginePowered, WheeledVehicle):
         self,
         horsepower: int,
         fuel_type: str,
-        number_of_wheels: int,
-        brand: str,
-        color: str,
         seats: int,
         model: str,
         year: int,
@@ -65,9 +57,6 @@ class Car(EnginePowered, WheeledVehicle):
         super().__init__(
             horsepower=horsepower,
             fuel_type=fuel_type,
-            number_of_wheels=number_of_wheels,
-            brand=brand,
-            color=color,
         )
         self.seats = seats
         self.model = model
@@ -83,19 +72,13 @@ class Motorcycle(EnginePowered, WheeledVehicle):
         self,
         horsepower: int,
         fuel_type: str,
-        number_of_wheels: int,
-        brand: str,
-        color: str,
-        has_sidecar: bool,
+        has_sidecar: bool,  # noqa: FBT001
         torque: int,
         style: str,
     ) -> None:
         super().__init__(
             horsepower=horsepower,
             fuel_type=fuel_type,
-            number_of_wheels=number_of_wheels,
-            brand=brand,
-            color=color,
         )
         self.has_sidecar = has_sidecar
         self.torque = torque
@@ -111,9 +94,6 @@ class Truck(EnginePowered, WheeledVehicle):
         self,
         horsepower: int,
         fuel_type: str,
-        number_of_wheels: int,
-        brand: str,
-        color: str,
         max_load: int,
         bed_length: float,
         drivetrain: str,
@@ -121,9 +101,6 @@ class Truck(EnginePowered, WheeledVehicle):
         super().__init__(
             horsepower=horsepower,
             fuel_type=fuel_type,
-            number_of_wheels=number_of_wheels,
-            brand=brand,
-            color=color,
         )
         self.max_load = max_load
         self.bed_length = bed_length

@@ -7,11 +7,11 @@ class Dog:
         self,
         name: str,
         age: int,
-    ):
+    ) -> None:
         self.name: str = name
         self.age: int = age
 
-    def paw(self):
+    def paw(self) -> str:
         return f"{self.name} is put on your hand."
 
 
