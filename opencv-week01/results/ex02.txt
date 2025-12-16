@@ -1,0 +1,57 @@
+QSettings::value: Empty key passed
+(1080, 1920, 3)
+3
+[[[0 0 0]
+  [0 0 0]
+  [0 0 0]
+  ...
+  [0 0 0]
+  [0 0 0]
+  [0 0 0]]
+
+ [[0 0 0]
+  [0 0 0]
+  [0 0 0]
+  ...
+  [0 0 0]
+  [0 0 0]
+  [0 0 0]]
+
+ [[0 0 0]
+  [0 0 0]
+  [0 0 0]
+  ...
+  [0 0 0]
+  [0 0 0]
+  [0 0 0]]
+
+ ...
+
+ [[0 0 0]
+  [0 0 0]
+  [0 0 0]
+  ...
+  [0 0 0]
+  [0 0 0]
+  [0 0 0]]
+
+ [[0 0 0]
+  [0 0 0]
+  [0 0 0]
+  ...
+  [0 0 0]
+  [0 0 0]
+  [0 0 0]]
+
+ [[0 0 0]
+  [0 0 0]
+  [0 0 0]
+  ...
+  [0 0 0]
+  [0 0 0]
+  [0 0 0]]]
+QThreadStorage: entry 9 destroyed before end of thread 0x56115fac7390
+QThreadStorage: entry 8 destroyed before end of thread 0x56115fac7390
+QThreadStorage: entry 7 destroyed before end of thread 0x56115fac7390
+QThreadStorage: entry 2 destroyed before end of thread 0x56115fac7390
+QThreadStorage: entry 1 destroyed before end of thread 0x56115fac7390

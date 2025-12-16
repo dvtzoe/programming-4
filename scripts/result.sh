@@ -4,7 +4,7 @@ if [ $# -ne 2 ]; then
   exit 1
 fi
 
-week_dir="${1%/*}"
+week_dir="$(pwd)/${1%/*}"
 src_file="${week_dir}/src/$2.py"
 results_dir="${week_dir}/results"
 output_file="${results_dir}/$2.txt"

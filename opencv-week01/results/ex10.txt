@@ -1,0 +1,8 @@
+QSettings::value: Empty key passed
+qt.qpa.wayland.textinput: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55f4ae5a0d90 with focusing surface 0x55f4ae3e4c00
+qt.qpa.wayland.textinput: virtual void QtWaylandClient::QWaylandTextInputv3::disableSurface(wl_surface*) Try to disable surface 0x55f4ae3e4c00 with focusing surface 0x55f4aecc82d0
+QThreadStorage: entry 9 destroyed before end of thread 0x55f4add887a0
+QThreadStorage: entry 8 destroyed before end of thread 0x55f4add887a0
+QThreadStorage: entry 7 destroyed before end of thread 0x55f4add887a0
+QThreadStorage: entry 2 destroyed before end of thread 0x55f4add887a0
+QThreadStorage: entry 1 destroyed before end of thread 0x55f4add887a0

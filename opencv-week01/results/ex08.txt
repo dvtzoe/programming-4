@@ -1,0 +1,7 @@
+QSettings::value: Empty key passed
+(600, 600, 3)
+QThreadStorage: entry 9 destroyed before end of thread 0x55b7d9bbb560
+QThreadStorage: entry 8 destroyed before end of thread 0x55b7d9bbb560
+QThreadStorage: entry 7 destroyed before end of thread 0x55b7d9bbb560
+QThreadStorage: entry 2 destroyed before end of thread 0x55b7d9bbb560
+QThreadStorage: entry 1 destroyed before end of thread 0x55b7d9bbb560

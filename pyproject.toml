@@ -22,6 +22,7 @@ dev = [
 
 [tool.ruff.lint]
 select = ["ALL"]
+extend-select = ["I"]
 ignore = [
     "COM812",
     "D100",
