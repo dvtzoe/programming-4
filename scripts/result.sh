@@ -21,7 +21,7 @@ uv sync
 
 cd ..
 
-python "$src_file" > "$output_file" 2>&1
+uv run "$src_file" > "$output_file" 2>&1
 
 cat "$output_file"
 
