@@ -14,6 +14,7 @@ members = [
     "week04",
     "opencv-week01",
     "opencv-week02",
+    "pre-midterm",
 ]
 
 [dependency-groups]
