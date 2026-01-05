@@ -15,12 +15,11 @@ members = [
     "opencv-week01",
     "opencv-week02",
     "pre-midterm",
+    "midterm",
 ]
 
 [dependency-groups]
-dev = [
-    "ruff>=0.14.4",
-]
+dev = ["ruff>=0.14.4"]
 
 [tool.ruff.lint]
 select = ["ALL"]
