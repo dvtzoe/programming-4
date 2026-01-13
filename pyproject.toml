@@ -4,11 +4,28 @@ version = "0.1.0"
 description = "For Kosen's Programming 4 assignments"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "week02",
+    "week03",
+    "week04",
+    "opencv-week01",
+    "opencv-week02",
+    "pre-midterm",
+    "midterm",
+]
+
+[tool.uv.sources]
+week02 = { workspace = true }
+week03 = { workspace = true }
+week04 = { workspace = true }
+opencv-week01 = { workspace = true }
+opencv-week02 = { workspace = true }
+pre-midterm = { workspace = true }
+midterm = { workspace = true }
+
 
 [tool.uv.workspace]
 members = [
-    "week01",
     "week02",
     "week03",
     "week04",

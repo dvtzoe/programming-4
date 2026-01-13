@@ -390,7 +390,7 @@ wheels = [
 [[package]]
 name = "midterm"
 version = "0.1.0"
-source = { virtual = "midterm" }
+source = { editable = "midterm" }
 dependencies = [
     { name = "dotenv" },
     { name = "openai" },
@@ -486,7 +486,7 @@ wheels = [
 [[package]]
 name = "opencv-week01"
 version = "0.1.0"
-source = { virtual = "opencv-week01" }
+source = { editable = "opencv-week01" }
 dependencies = [
     { name = "matplotlib" },
     { name = "opencv-python" },
@@ -513,7 +513,7 @@ dev = [{ name = "matplotlib-stubs", specifier = ">=0.3.11" }]
 [[package]]
 name = "opencv-week02"
 version = "0.1.0"
-source = { virtual = "opencv-week02" }
+source = { editable = "opencv-week02" }
 dependencies = [
     { name = "opencv-contrib-python" },
     { name = "opencv-python" },
@@ -635,12 +635,21 @@ wheels = [
 [[package]]
 name = "pre-midterm"
 version = "0.1.0"
-source = { virtual = "pre-midterm" }
+source = { editable = "pre-midterm" }
 
 [[package]]
 name = "programming-4"
 version = "0.1.0"
 source = { virtual = "." }
+dependencies = [
+    { name = "midterm" },
+    { name = "opencv-week01" },
+    { name = "opencv-week02" },
+    { name = "pre-midterm" },
+    { name = "week02" },
+    { name = "week03" },
+    { name = "week04" },
+]
 
 [package.dev-dependencies]
 dev = [
@@ -648,6 +657,15 @@ dev = [
 ]
 
 [package.metadata]
+requires-dist = [
+    { name = "midterm", editable = "midterm" },
+    { name = "opencv-week01", editable = "opencv-week01" },
+    { name = "opencv-week02", editable = "opencv-week02" },
+    { name = "pre-midterm", editable = "pre-midterm" },
+    { name = "week02", editable = "week02" },
+    { name = "week03", editable = "week03" },
+    { name = "week04", editable = "week04" },
+]
 
 [package.metadata.requires-dev]
 dev = [{ name = "ruff", specifier = ">=0.14.4" }]
@@ -939,14 +957,14 @@ wheels = [
 [[package]]
 name = "week02"
 version = "0.1.0"
-source = { virtual = "week02" }
+source = { editable = "week02" }
 
 [[package]]
 name = "week03"
 version = "0.1.0"
-source = { virtual = "week03" }
+source = { editable = "week03" }
 
 [[package]]
 name = "week04"
 version = "0.1.0"
-source = { virtual = "week04" }
+source = { editable = "week04" }
