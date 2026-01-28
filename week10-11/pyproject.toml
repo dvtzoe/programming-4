@@ -1,7 +1,8 @@
 [project]
-name = "week10"
+name = "week10-11"
 version = "0.1.0"
 requires-python = ">=3.13"
 dependencies = [
+    "bcrypt>=5.0.0",
     "flask>=3.1.2",
 ]
